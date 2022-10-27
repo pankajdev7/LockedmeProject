@@ -1,0 +1,55 @@
+package com.lockedme;
+
+import java.util.Scanner;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		final String ROOT_DIRECTORY_PATH = "F:/Java_study";
+		LockedMeBO bo = new LockedMeBO();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Welcome to LockedMe.com");
+		System.out.println();
+		System.out.println("Developer Info");
+		System.out.println();
+		System.out.println("Pankaj Dwivedi-Developer");
+		System.out.println();
+		int ch, ch1;
+		do {
+			System.out.println("1. List Files in Ascending order");
+			System.out.println("2. Edit File");
+			System.out.println("3. Exit");
+			System.out.println("Enter the Choice");
+			ch = sc.nextInt();
+			switch (ch) {
+			case 1:
+				bo.displayFilesInAscendingOrder(ROOT_DIRECTORY_PATH);
+				break;
+			case 2:
+				do {
+					System.out.println("---- Add File to the Directory");
+					System.out.println("---- Remove File from Directory");
+					System.out.println("---- Searching a File in Direcotry");
+					System.out.println("---- Enter your Choice");
+					ch1 = sc.nextInt();
+					switch (ch1) {
+					case 1:
+						bo.addFile("", ROOT_DIRECTORY_PATH);
+						break;
+					case 2:
+						bo.deleteFile("", ROOT_DIRECTORY_PATH);
+						break;
+					case 3:
+						bo.searchFile("", ROOT_DIRECTORY_PATH);
+						break;
+					}
+				} while (ch1 <=3);
+				break;
+			}
+		} while (ch < 3);
+		{
+
+		}
+	}
+
+}

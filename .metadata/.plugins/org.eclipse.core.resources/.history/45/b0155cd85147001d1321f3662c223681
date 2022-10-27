@@ -1,0 +1,18 @@
+package org.PankajLearn;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class SortingDemo {
+
+	public static void main(String[] args) {
+		Set<Emp> t= new TreeSet<>();
+		t.add(new Emp(1,"Pnkaj", "bhopal"));
+		t.add(new Emp(4,"Pnkaj2", "indore"));
+		t.add(new Emp(3,"madhu", "bhopal"));
+		t.add(new Emp(2,"Puddu", "bhopal"));
+		System.out.println(t);
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package org.pankajlearn;
+
+public class LenearSearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

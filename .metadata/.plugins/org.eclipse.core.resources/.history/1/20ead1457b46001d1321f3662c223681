@@ -1,0 +1,25 @@
+package org.PankajLearn;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+		Set<Integer> h=new HashSet<>();
+		Set<Integer> h1=new LinkedHashSet<>();
+		h1.add(10);
+		h1.add(20);
+		h1.add(30);
+		h1.add(10);
+		System.out.println(h1);
+		h.add(10);
+		h.add(20);
+		h.add(20);
+		h.add(30);
+		System.out.println(h);
+
+	}
+
+}
